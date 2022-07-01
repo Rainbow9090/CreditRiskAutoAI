@@ -76,7 +76,7 @@ def predict():
                     None ]]
         }]}
 
-   response_scoring = requests.post('https://us-south.ml.cloud.ibm.com/ml/v4/deployments/778b6d5d-48cc-4256-bce7-5ddd5a740d0d/predictions?version=2022-06-23', json=payload_scoring,
+    response_scoring = requests.post('https://us-south.ml.cloud.ibm.com/ml/v4/deployments/778b6d5d-48cc-4256-bce7-5ddd5a740d0d/predictions?version=2022-06-23', json=payload_scoring,
  headers={'Authorization': 'Bearer ' + mltoken})
     print("Scoring response")
     print(response_scoring.json())
